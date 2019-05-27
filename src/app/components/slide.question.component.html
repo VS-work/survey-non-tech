@@ -1,13 +1,13 @@
 <form [formGroup]="form">
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Satisfaction Survey</h3>
+          <div class="panel-title" [innerHTML]="content.question"></div>
         </div>
         <div class="panel-body two-col">
           <div class="row" formArrayName="items" *ngFor="let item of form.controls.items.controls; let i = index">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div *ngIf="content.config.type===Checkboxes">
                 <label>
                   <input type="checkbox" [formControlName]="i">

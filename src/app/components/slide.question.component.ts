@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, FormArray, FormControl } from '@angular/forms';
 import { IQuestion, CHECKBOXES, RADIOBUTTON } from '../common/question.desc';
 
@@ -7,20 +7,30 @@ import { IQuestion, CHECKBOXES, RADIOBUTTON } from '../common/question.desc';
   templateUrl: './slide.question.component.html',
   styleUrls: ['./slide.question.component.css']
 })
-export class SlideQuestionComponent implements OnInit {
-  @Input() content: IQuestion;
+export class SlideQuestionComponent {
   form: FormGroup;
   items = [];
   model = { option: '' };
   readonly Checkboxes: string;
   readonly RadioButton: string;
+  private _content: IQuestion;
 
   constructor(private formBuilder: FormBuilder) {
     this.Checkboxes = CHECKBOXES;
     this.RadioButton = RADIOBUTTON;
   }
 
-  ngOnInit() {
+  get content(): IQuestion {
+    return this._content;
+  }
+
+  @Input()
+  set content(input: IQuestion) {
+    this._content = input;
+    this.fillItems();
+  }
+
+  fillItems() {
     this.form = this.formBuilder.group({
       items: new FormArray([])
     });

@@ -1,1 +1,4 @@
-<slide-question [content]="question"></slide-question>
+<button (click)="start()">start</button>
+<div *ngIf="!!question">
+  <slide-question [content]="question"></slide-question>
+</div>

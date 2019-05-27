@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { QuestService } from './quest.service';
 import { SlideQuestionComponent } from './components/slide.question.component';
 
 @NgModule({
@@ -17,7 +18,7 @@ import { SlideQuestionComponent } from './components/slide.question.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [QuestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
