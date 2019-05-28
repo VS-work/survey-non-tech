@@ -1,4 +1,9 @@
-<button (click)="start()">start</button>
-<div *ngIf="!!question">
-  <slide-question [content]="question"></slide-question>
+<div *ngIf="isBlank() || isFinished()">
+  <button (click)="start()">start</button>
 </div>
+<div *ngIf="isInProgress()">
+    Time remaining: {{remainTimeLabel}}
+  <slide-question [content]="question" [intervalValue]="intervalValue" (remain)="showRemainTime($event)"
+    (answer)="processAnswer($event)"></slide-question>
+</div>
+<result *ngIf="isFinished()"></result>

@@ -8,3 +8,7 @@ export interface ISession {
   id: string;
   properties: ISessionProperties;
 }
+
+export enum Phases {
+  Blank, InProgress, Finished
+}
