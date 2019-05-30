@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { IQuestion } from './common/question.desc';
 import { QuestService } from './quest.service';
-import { Phases } from './common/session.desc';
+import { Phases, TestResult } from './common/session.desc';
 
 const host = 'http://localhost:3000';
 
@@ -18,6 +18,7 @@ export class AppComponent {
   intervalValue: number;
   remainTimeLabel: string;
   phase: Phases;
+  testResult: TestResult;
 
   constructor(private http: HttpClient, private questService: QuestService) {
     this.intervalValue = 61000;
@@ -31,6 +32,16 @@ export class AppComponent {
     await this.nextQuestion();
   }
 
+  async stop() {
+    await this.http.get<any>(`${host}/abandon/${this.questService.session.id}`).toPromise();
+    this.phase = Phases.Finished;
+    this.questService.session.id = null;
+    this.questService.session.properties.quantity = null;
+    this.questService.session.properties.question = null;
+    this.questService.session.properties.passed = [];
+    this.question = null;
+  }
+
   async processQuestion() {
     await this.nextQuestion();
   }
@@ -40,12 +51,13 @@ export class AppComponent {
   }
 
   async processAnswer(result: string | string[]) {
-    await this.http.post<any>(`${host}/answer/${this.questService.session.id}`, { question: this.question, result }).toPromise();
+    await this.http.post<any>(`${host}/answer/${this.questService.session.id}`, { origin: this.question, result }).toPromise();
     if (this.currentQuestion < this.totalQuestions) {
       this.processQuestion();
       this.currentQuestion++;
     } else {
       this.question = null;
+      this.testResult = await this.http.get<any>(`${host}/finish/${this.questService.session.id}`).toPromise();
       this.phase = Phases.Finished;
     }
   }
@@ -70,5 +82,7 @@ export class AppComponent {
   private async configure() {
     this.questService.session.id = (await this.http.get<any>(`${host}/session`).toPromise()).id;
     this.questService.session.properties = (await this.http.get<any>(`${host}/configure/${this.questService.session.id}/${this.totalQuestions}`).toPromise()).properties;
+    this.currentQuestion = 1;
+    this.question = null;
   }
 }

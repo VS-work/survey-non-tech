@@ -12,3 +12,15 @@ export interface ISession {
 export enum Phases {
   Blank, InProgress, Finished
 }
+
+export interface TestResult {
+  total: number;
+  resultByTags: {
+    [s: string]: {
+      right: number,
+      wrong: number,
+      rightPercent: number,
+      wrongPercent: number
+    }
+  };
+}
