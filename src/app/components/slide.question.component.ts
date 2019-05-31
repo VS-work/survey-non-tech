@@ -1,3 +1,4 @@
+import { shuffle } from 'lodash';
 import { Component, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, FormArray, FormControl } from '@angular/forms';
 import { IQuestion, CHECKBOXES, RADIOBUTTON } from '../common/question.desc';
@@ -46,7 +47,17 @@ export class SlideQuestionComponent implements OnDestroy {
     this.form = this.formBuilder.group({
       items: new FormArray([])
     });
-    this.items = this.content.answers.map(answer => ({ id: answer, name: answer }));
+
+    const lastAnswer = this.content.answers.find(answer => answer.last === true);
+    let items = this.content.answers.filter(answer => answer.last !== true).map(answer => answer.answer);
+
+    items = this.content.config.shuffle === true ? shuffle(items) : items;
+    if (lastAnswer) {
+      items.push(lastAnswer.answer);
+    }
+
+    this.items = items.map(answer => ({ id: answer, name: answer }));
+
     this.items.map(() => {
       const control = new FormControl(false);
       (this.form.controls.items as FormArray).push(control);

@@ -7,6 +7,7 @@
     <ul class="list-unstyled components">
       <li>
         <a href="#" *ngIf="isBlank() || isFinished()" (click)="start()">start</a>
+        <span *ngIf="!isBlank() && !isFinished()">{{currentQuestion}} of {{totalQuestions}}</span>
         <span *ngIf="!isBlank() && !isFinished()">Time remaining: {{remainTimeLabel}}</span>
         <a href="#" *ngIf="!isBlank() && !isFinished()" (click)="stop()">stop</a>
       </li>
