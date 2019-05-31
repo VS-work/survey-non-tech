@@ -15,13 +15,11 @@ export class AppComponent {
   question: IQuestion;
   totalQuestions: number;
   currentQuestion: number;
-  intervalValue: number;
   remainTimeLabel: string;
   phase: Phases;
   testResult: TestResult;
 
   constructor(private http: HttpClient, private questService: QuestService) {
-    this.intervalValue = 61000;
     this.totalQuestions = 10;
     this.currentQuestion = 1;
     this.phase = Phases.Blank;

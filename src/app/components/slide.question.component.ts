@@ -9,7 +9,6 @@ import { IQuestion, CHECKBOXES, RADIOBUTTON } from '../common/question.desc';
   styleUrls: ['./slide.question.component.css']
 })
 export class SlideQuestionComponent implements OnDestroy {
-  @Input() intervalValue: number;
   @Output() answer: EventEmitter<string | string[]> = new EventEmitter();
   @Output() remain: EventEmitter<number> = new EventEmitter();
   form: FormGroup;
@@ -42,7 +41,9 @@ export class SlideQuestionComponent implements OnDestroy {
   }
 
   fillItems() {
-    this.restTime = this.intervalValue / 1000;
+    const intervalValue = this.getIntervalValue();
+
+    this.restTime = intervalValue / 1000;
     this.model = { option: '' };
     this.form = this.formBuilder.group({
       items: new FormArray([])
@@ -65,7 +66,7 @@ export class SlideQuestionComponent implements OnDestroy {
     this.clearIntervals();
     this.questInterval = setInterval(async () => {
       this.submit();
-    }, this.intervalValue);
+    }, intervalValue);
     this.timerInterval = setInterval(() => {
       this.remain.emit(--this.restTime);
     }, 1000);
@@ -89,5 +90,9 @@ export class SlideQuestionComponent implements OnDestroy {
       clearInterval(this.timerInterval);
       this.timerInterval = null;
     }
+  }
+
+  private getIntervalValue(): number {
+    return this.content.config.slow === true ? 100000 : this.content.config.slow === false ? 30000 : 50000;
   }
 }

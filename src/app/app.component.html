@@ -16,7 +16,7 @@
 
   <div id="content">
     <div *ngIf="isInProgress()">
-      <slide-question [content]="question" [intervalValue]="intervalValue" (remain)="showRemainTime($event)"
+      <slide-question [content]="question" (remain)="showRemainTime($event)"
         (answer)="processAnswer($event)"></slide-question>
     </div>
     <result *ngIf="isFinished()" [data]="testResult"></result>
