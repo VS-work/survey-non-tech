@@ -3,9 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { IQuestion } from './common/question.desc';
 import { QuestService } from './quest.service';
 import { Phases, TestResult } from './common/session.desc';
-import { AuthService } from './auth/auth.service';
-import { SocialUser } from './auth/entities';
-import { GoogleLoginProvider } from './auth/providers/index';
+import { GoogleLoginProvider, AuthService, SocialUser } from "angularx-social-login";
 
 const host = 'http://localhost:3000';
 
@@ -69,7 +67,7 @@ export class AppComponent implements OnInit {
       this.currentQuestion++;
     } else {
       this.question = null;
-      this.testResult = await this.http.get<any>(`${host}/finish/${this.questService.session.id}`).toPromise();
+      this.testResult = await this.http.post<any>(`${host}/finish/${this.questService.session.id}`, this.user).toPromise();
       this.phase = Phases.Finished;
     }
   }
