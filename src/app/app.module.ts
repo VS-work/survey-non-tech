@@ -7,6 +7,19 @@ import { AppComponent } from './app.component';
 import { QuestService } from './quest.service';
 import { SlideQuestionComponent } from './components/slide.question.component';
 import { ResultComponent } from './components/result.component';
+import { AuthServiceConfig, AuthService } from './auth/auth.service';
+import { GoogleLoginProvider } from './auth/providers/google-login-provider';
+
+const config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider('586244264006-ufp9g3raj6dfg5ijk6002f2ul857kpe5.apps.googleusercontent.com')
+  }
+]);
+
+export function provideConfig() {
+  return config;
+}
 
 @NgModule({
   declarations: [
@@ -20,7 +33,14 @@ import { ResultComponent } from './components/result.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [QuestService],
+  providers: [
+    QuestService,
+    AuthService,
+    {
+      provide: AuthServiceConfig,
+      useFactory: provideConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

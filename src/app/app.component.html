@@ -1,24 +1,47 @@
-<div class="wrapper">
-  <nav id="sidebar">
-    <div class="sidebar-header">
-      <h3>Quiz</h3>
+<div *ngIf="ready" class="jumbotron bg-transparent text-center">
+    <div *ngIf="!user" class="card text-center">
+        <h6 class="card-header">
+            Login
+        </h6>
+        <div class="card-block">
+            <h4 class="card-title">Not signed in</h4>
+            <p class="card-text">Sign in with</p>
+        </div>
+        <div class="card-block">
+            <button class="btn btn-social-icon btn-google mx-1" (click)="signInWithGoogle()">Google</button>
+        </div>
     </div>
+</div>
+<div *ngIf="user" class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <div class="card-block">
+                <div><img src="{{user.photoUrl}}"></div>
+                <h4 class="card-title">{{ user.name }}</h4>
+            </div>
+        </div>
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#" *ngIf="isBlank() || isFinished()" (click)="start()">start</a>
+                <span *ngIf="!isBlank() && !isFinished()" class="question-label">
+                        Question <span>{{currentQuestion}}</span> of <span>{{totalQuestions}}</span>
+                </span>
+                <span *ngIf="!isBlank() && !isFinished() && time != null" [ngClass]="{'time-label-critical': time < 15}" class="time-label">
+                        Time remaining: <span>{{remainTimeLabel}}</span>
+                </span>
+                <a href="#" *ngIf="!isBlank() && !isFinished()" (click)="stop()">stop</a>
+            </li>
+            <li>
+                <a href="#" (click)="signOut()">sign out</a>
+            </li>
+        </ul>
+    </nav>
 
-    <ul class="list-unstyled components">
-      <li>
-        <a href="#" *ngIf="isBlank() || isFinished()" (click)="start()">start</a>
-        <span *ngIf="!isBlank() && !isFinished()">{{currentQuestion}} of {{totalQuestions}}</span>
-        <span *ngIf="!isBlank() && !isFinished()">Time remaining: {{remainTimeLabel}}</span>
-        <a href="#" *ngIf="!isBlank() && !isFinished()" (click)="stop()">stop</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div id="content">
-    <div *ngIf="isInProgress()">
-      <slide-question [content]="question" (remain)="showRemainTime($event)"
-        (answer)="processAnswer($event)"></slide-question>
+    <div id="content">
+        <div *ngIf="isInProgress()">
+            <slide-question [content]="question" (remain)="showRemainTime($event)" (answer)="processAnswer($event)">
+            </slide-question>
+        </div>
+        <result *ngIf="isFinished()" [data]="testResult"></result>
     </div>
-    <result *ngIf="isFinished()" [data]="testResult"></result>
-  </div>
 </div>

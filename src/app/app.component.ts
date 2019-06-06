@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { IQuestion } from './common/question.desc';
 import { QuestService } from './quest.service';
 import { Phases, TestResult } from './common/session.desc';
+import { AuthService } from './auth/auth.service';
+import { SocialUser } from './auth/entities';
+import { GoogleLoginProvider } from './auth/providers/index';
 
 const host = 'http://localhost:3000';
 
@@ -11,18 +14,28 @@ const host = 'http://localhost:3000';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  user: SocialUser;
   question: IQuestion;
   totalQuestions: number;
   currentQuestion: number;
   remainTimeLabel: string;
   phase: Phases;
   testResult: TestResult;
+  time: number = null;
+  ready = false;
 
-  constructor(private http: HttpClient, private questService: QuestService) {
+  constructor(private http: HttpClient, private questService: QuestService, private authService: AuthService) {
     this.totalQuestions = 10;
     this.currentQuestion = 1;
     this.phase = Phases.Blank;
+  }
+
+  ngOnInit() {
+    this.authService.authState.subscribe((user) => {
+      this.user = user;
+      this.ready = true;
+    });
   }
 
   async start() {
@@ -45,6 +58,7 @@ export class AppComponent {
   }
 
   showRemainTime(time: number) {
+    this.time = time;
     this.remainTimeLabel = `${time} sec`;
   }
 
@@ -70,6 +84,14 @@ export class AppComponent {
 
   isFinished(): boolean {
     return this.phase === Phases.Finished;
+  }
+
+  signInWithGoogle() {
+    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+  }
+
+  signOut() {
+    this.authService.signOut();
   }
 
   private async nextQuestion() {

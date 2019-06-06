@@ -43,6 +43,49 @@ a:focus {
     margin: 40px 0;
 }
 
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.question-label {
+    color: lightblue;
+}
+
+.question-label>span {
+    color: yellow;
+}
+
+.time-label {
+    color: lightblue;
+}
+
+.time-label>span {
+    color: lightpink;
+}
+
+.time-label-critical>span {
+    color: red;
+    animation: opacity 2s ease-in-out infinite;
+    opacity: 1;
+}
+
+.question-label>span,
+.time-label>span {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: larger;
+}
+
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -83,7 +126,8 @@ a:focus {
     padding: 10px;
 }
 
-#sidebar ul li a, #sidebar ul li span {
+#sidebar ul li a,
+#sidebar ul li span {
     padding: 10px;
     font-size: 1.1em;
     display: block;
@@ -141,6 +185,7 @@ a.article:hover {
     color: #fff !important;
 }
 
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -158,6 +203,7 @@ a.article:hover {
 #content.active {
     width: 100%;
 }
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES

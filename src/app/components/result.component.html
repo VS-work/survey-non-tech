@@ -3,18 +3,18 @@
     <div class="panel-title">Your result is <b>{{data.total}}%</b></div>
   </div>
   <div class="panel-body two-col">
-    <div class="row" style="margin-bottom: 20px;">
+    <div class="row" style="margin-bottom: 50px;">
       <div class="col-md-6"><span *ngIf="data.simplePercent">% of simple answers is <b>{{data.simplePercent}}</b></span></div>
       <div class="col-md-6"><span *ngIf="data.complexPercent">% of difficult answers is <b>{{data.complexPercent}}</b></span></div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <div>Strong</div>
+        <div><i>Strong</i></div>
         <hr>
         <div *ngFor="let tag of getStrong()"><label>{{tag}}</label></div>
       </div>
       <div class="col-md-6">
-        <div>Weak</div>
+        <div><i>Weak</i></div>
         <hr>
         <div *ngFor="let tag of getWeak()"><label>{{tag}}</label></div>
       </div>
