@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { IQuestion } from './common/question.desc';
 import { QuestService } from './quest.service';
-import { Phases, TestResult } from './common/session.desc';
-import { GoogleLoginProvider, AuthService, SocialUser } from "angularx-social-login";
+import { Phases, TestResult, TestSummary } from './common/session.desc';
+import { GoogleLoginProvider, AuthService, SocialUser } from 'angularx-social-login';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 const host = 'http://localhost:3000';
 
@@ -13,6 +14,7 @@ const host = 'http://localhost:3000';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  modalRef: BsModalRef;
   user: SocialUser;
   question: IQuestion;
   totalQuestions: number;
@@ -22,8 +24,9 @@ export class AppComponent implements OnInit {
   testResult: TestResult;
   time: number = null;
   ready = false;
+  passedSessions: TestSummary[] = [];
 
-  constructor(private http: HttpClient, private questService: QuestService, private authService: AuthService) {
+  constructor(private http: HttpClient, private questService: QuestService, private authService: AuthService, private modalService: BsModalService) {
     this.totalQuestions = 10;
     this.currentQuestion = 1;
     this.phase = Phases.Blank;
@@ -34,6 +37,11 @@ export class AppComponent implements OnInit {
       this.user = user;
       this.ready = true;
     });
+  }
+
+  async openModal(template: TemplateRef<any>) {
+    this.passedSessions = await this.http.get<any>(`${host}/passed-sessions/${this.user.id}`).toPromise();
+    this.modalRef = this.modalService.show(template);
   }
 
   async start() {

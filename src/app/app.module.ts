@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalModule, AccordionModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { QuestService } from './quest.service';
@@ -29,8 +31,11 @@ export function provideConfig() {
   imports: [
     FormsModule,
     BrowserModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ModalModule.forRoot(),
+    AccordionModule.forRoot()
   ],
   providers: [
     QuestService,
