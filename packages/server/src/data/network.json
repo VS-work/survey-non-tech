@@ -1,0 +1,1235 @@
+[
+  {
+    "question": "Выберите ВСЕ пункты относительно понятия Сервер",
+    "answers": [
+      {
+        "answer": "Это ТОЛЬКО железо"
+      },
+      {
+        "answer": "Это ТОЛЬКО программа"
+      },
+      {
+        "answer": "Это понятие можно отнести как железу, так и к ПО",
+        "correct": true
+      },
+      {
+        "answer": "Может быть запущен на локальной машине без выхода в Интернет (LAN)",
+        "correct": true
+      },
+      {
+        "answer": "Наличие Интернета (WAN) обязательно для его работы"
+      },
+      {
+        "answer": "ВСЕГДА имеет собственный IP адрес"
+      }
+    ],
+    "tags": [
+      "железо",
+      "программы",
+      "интернет",
+      "термины"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "LAN это:",
+    "answers": [
+      {
+        "answer": "Local Active Network"
+      },
+      {
+        "answer": "Local Adapted Network"
+      },
+      {
+        "answer": "Local Area Net"
+      },
+      {
+        "answer": "Local Area Network",
+        "correct": true
+      },
+      {
+        "answer": "Linked Area Network"
+      },
+      {
+        "answer": "Lane Area Net"
+      }
+    ],
+    "tags": [
+      "железо",
+      "интернет",
+      "термины"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "WAN это:",
+    "answers": [
+      {
+        "answer": "Wire Active Network"
+      },
+      {
+        "answer": "Wireless Adapted Network"
+      },
+      {
+        "answer": "Wide Area Net"
+      },
+      {
+        "answer": "Wide Area Network",
+        "correct": true
+      },
+      {
+        "answer": "Wireless Area Network"
+      },
+      {
+        "answer": "Wide Area Net"
+      }
+    ],
+    "tags": [
+      "железо",
+      "интернет",
+      "термины"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Все хосты в Интернете ОБЯЗАНЫ реализовывать три первых уровня TCP/IP стека",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      }
+    ],
+    "tags": [
+      "железо",
+      "сеть"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Все хосты в Интернете ОБЯЗАНЫ реализовывать ВСЕ уровни TCP/IP стека",
+    "answers": [
+      {
+        "answer": "Да"
+      },
+      {
+        "answer": "Нет",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "железо",
+      "сеть"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Являются ли двоичная и десятичная системы счисления ПОЗИЦИОННЫМИ?",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      }
+    ],
+    "tags": [
+      "системы счисления",
+      "программы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выберите ВСЕ числа из нижеперечисленных, которые МОГУТ БЫТЬ двоичными :",
+    "answers": [
+      {
+        "answer": "1100",
+        "correct": true
+      },
+      {
+        "answer": "110001",
+        "correct": true
+      },
+      {
+        "answer": "+1100"
+      },
+      {
+        "answer": "1A"
+      },
+      {
+        "answer": "-110001"
+      },
+      {
+        "answer": "12"
+      }
+    ],
+    "tags": [
+      "системы счисления",
+      "программы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите ВСЕ числа из нижеперечисленных, которые МОГУТ БЫТЬ шестнадцатеричными",
+    "answers": [
+      {
+        "answer": "1100",
+        "correct": true
+      },
+      {
+        "answer": "100",
+        "correct": true
+      },
+      {
+        "answer": "345",
+        "correct": true
+      },
+      {
+        "answer": "ААА",
+        "correct": true
+      },
+      {
+        "answer": "3A1F",
+        "correct": true
+      },
+      {
+        "answer": "0L"
+      },
+      {
+        "answer": "12D3G4"
+      },
+      {
+        "answer": "12D3E4",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "системы счисления",
+      "программы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Маска подсети является частью IPv4 адреса",
+    "answers": [
+      {
+        "answer": "Да"
+      },
+      {
+        "answer": "Нет",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Адрес IPv6 содержит больше служебной информации, чем адрес IPv4",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Оба содержат одинаковое к-во служебной информации"
+      }
+    ],
+    "tags": [
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "По IP адресу можно узнать, в какой он сети: локальной или глобальной",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      }
+    ],
+    "tags": [
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Выберите ВСЕ пункты относительно понятия Сетевой шлюз",
+    "answers": [
+      {
+        "answer": "Это ТОЛЬКО железо"
+      },
+      {
+        "answer": "Это ТОЛЬКО программа"
+      },
+      {
+        "answer": "Это понятие можно отнести как железу, так и к ПО",
+        "correct": true
+      },
+      {
+        "answer": "Для сопряжения сетей, реализующих разные протоколы (например, локальной и глобальной)",
+        "correct": true
+      },
+      {
+        "answer": "ВСЕГДА имеет собственный IP адрес",
+        "correct": true
+      },
+      {
+        "answer": "Для сопряжения сетей, реализующих ТОЛЬКО одинаковые протоколы"
+      }
+    ],
+    "tags": [
+      "железо",
+      "программы",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Маршрутизатор это",
+    "answers": [
+      {
+        "answer": "Вид аппаратного Сетевого шлюза",
+        "correct": true
+      },
+      {
+        "answer": "Это сервер"
+      },
+      {
+        "answer": "Это ТОЛЬКО железо",
+        "correct": true
+      },
+      {
+        "answer": "Это ТОЛЬКО программа"
+      },
+      {
+        "answer": "Это понятие можно отнести как железу, так и к ПО"
+      }
+    ],
+    "tags": [
+      "железо",
+      "программы",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Возможно ли наличие IP адреса у смартфона",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      }
+    ],
+    "tags": [
+      "железо",
+      "протоколы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "У одного и то же ПК может быть несколько IP адресов",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Может, если он ТОЛЬКО подключен к глобальной сети"
+      }
+    ],
+    "tags": [
+      "железо",
+      "протоколы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Корректно ли следующее утверждение: “У каждой сетевой карты должен быть свой IP адрес”",
+    "answers": [
+      {
+        "answer": "Да",
+        "correct": true
+      },
+      {
+        "answer": "Нет"
+      }
+    ],
+    "tags": [
+      "железо",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Выберите ВСЕ пункты относительно понятия Внутренний IP адрес",
+    "answers": [
+      {
+        "answer": "Может иногда совпадать с внешним"
+      },
+      {
+        "answer": "Не может совпадать с внешним",
+        "correct": true
+      },
+      {
+        "answer": "Такого понятия не существует"
+      },
+      {
+        "answer": "Также называется “частным”",
+        "correct": true
+      },
+      {
+        "answer": "Используется только в глобальной сети"
+      },
+      {
+        "answer": "Используется только в локальной сети",
+        "correct": true
+      },
+      {
+        "answer": "Может быть использован в глобальной сети"
+      },
+      {
+        "answer": "Является частью внешнего"
+      }
+    ],
+    "tags": [
+      "программы",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите ВСЕ пункты относительно понятия Внешний IP адрес",
+    "answers": [
+      {
+        "answer": "Может иногда совпадать с внутренним"
+      },
+      {
+        "answer": "Не может совпадать с внутренним",
+        "correct": true
+      },
+      {
+        "answer": "Такого понятия не существует"
+      },
+      {
+        "answer": "Также называется “белым” или “публичным”",
+        "correct": true
+      },
+      {
+        "answer": "Используется только в глобальной сети",
+        "correct": true
+      },
+      {
+        "answer": "Используется только в локальной сети"
+      },
+      {
+        "answer": "Может быть использован в локальной сети"
+      },
+      {
+        "answer": "Является частью внутреннего"
+      }
+    ],
+    "tags": [
+      "программы",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Технология NAT предназначена для:",
+    "answers": [
+      {
+        "answer": "Трансляции частных адресов в публичные",
+        "correct": true
+      },
+      {
+        "answer": "Коммутации хостов внутри сетей"
+      },
+      {
+        "answer": "Определения маски подсети"
+      },
+      {
+        "answer": "Ускорения процессинга данных в сети"
+      },
+      {
+        "answer": "Преобразования адреса IPv4 в IPv6"
+      }
+    ],
+    "tags": [
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Статический публичный адрес предназначен для:",
+    "answers": [
+      {
+        "answer": "удалённый доступ к компьютеру",
+        "correct": true
+      },
+      {
+        "answer": "удалённый доступ к камерам квартирного видеонаблюдения",
+        "correct": true
+      },
+      {
+        "answer": "vpn-подключение (например, vpn-подключение из дома к офисной сети)",
+        "correct": true
+      },
+      {
+        "answer": "организация на домашнем компьютере сервера, доступного извне (Web-сервера или FTP-сервера)",
+        "correct": true
+      },
+      {
+        "answer": "авторизация на некоторых сервисах (например, файловых хранилищах)",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "программы",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выберите ВСЕ пункты относительно отличия статического IP адреса от динамического",
+    "answers": [
+      {
+        "answer": "Статический не меняется от подключения к подключению",
+        "correct": true
+      },
+      {
+        "answer": "Динамический меняется от подключения к подключению",
+        "correct": true
+      },
+      {
+        "answer": "Динамический определяется DHCP сервисом",
+        "correct": true
+      },
+      {
+        "answer": "Статический определяется DHCP сервисом"
+      },
+      {
+        "answer": "Динамический НИКОГДА не должен повторяться от подключения к подключению"
+      },
+      {
+        "answer": "Динамический определяется только локальной конфигурацией хоста"
+      }
+    ],
+    "tags": [
+      "программы",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "DHCP это",
+    "answers": [
+      {
+        "answer": "Doubling Host Capacity Protocol"
+      },
+      {
+        "answer": "Dynamic Host Configuration Protocol",
+        "correct": true
+      },
+      {
+        "answer": "Dynamic Host Configuration Plugin"
+      },
+      {
+        "answer": "Dynamic Host Configuration Program"
+      },
+      {
+        "answer": "Dynamic Host Concentration Protocol"
+      },
+      {
+        "answer": "Dynamic Host Concentration Protocol"
+      },
+      {
+        "answer": "Dynamic Heap Concatenation Plugin"
+      },
+      {
+        "answer": "Dynamic Heap Configuration Protocol"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Интернет и Web… Это одно и то же?",
+    "answers": [
+      {
+        "answer": "Да"
+      },
+      {
+        "answer": "Нет",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "база"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "IETF это",
+    "answers": [
+      {
+        "answer": "Intranet Engineering Task Force"
+      },
+      {
+        "answer": "Internet Engineering Task Force",
+        "correct": true
+      },
+      {
+        "answer": "Internet Engineering Team Foundation"
+      },
+      {
+        "answer": "Interchange Engineering Team Foundation"
+      },
+      {
+        "answer": "International Engineering Task Force"
+      },
+      {
+        "answer": "International Engineering Team Foundation"
+      }
+    ],
+    "tags": [
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выберите НЕПРАВИЛЬНЫЕ IP адреса:",
+    "answers": [
+      {
+        "answer": "111.111.111.111"
+      },
+      {
+        "answer": "192.168.1.113"
+      },
+      {
+        "answer": "192.168.0.113"
+      },
+      {
+        "answer": "192.168F.0.113",
+        "correct": true
+      },
+      {
+        "answer": "192.168.113",
+        "correct": true
+      },
+      {
+        "answer": "1.2.3",
+        "correct": true
+      },
+      {
+        "answer": "1.2.3.4"
+      },
+      {
+        "answer": "192.168.0.113.105",
+        "correct": true
+      },
+      {
+        "answer": "217.42.1",
+        "correct": true
+      },
+      {
+        "answer": "217.42.1.100"
+      },
+      {
+        "answer": "123.157.0.1"
+      },
+      {
+        "answer": "259.157.0.1",
+        "correct": true
+      },
+      {
+        "answer": "217.42.01.100"
+      },
+      {
+        "answer": "42.01.100.257",
+        "correct": true
+      },
+      {
+        "answer": "217:42:01:100",
+        "correct": true
+      },
+      {
+        "answer": "217.42.1021.100",
+        "correct": true
+      },
+      {
+        "answer": "21742.01.100",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "problem solving",
+      "сеть",
+      "протоколы"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "MAC адрес относится к TCP/IP",
+    "answers": [
+      {
+        "answer": "Да"
+      },
+      {
+        "answer": "Нет",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "problem solving",
+      "сеть",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Найдите НЕСУЩЕСТВУЮЩИЙ уровень TCP/IP стека (OSI model)",
+    "answers": [
+      {
+        "answer": "Application"
+      },
+      {
+        "answer": "Presentation"
+      },
+      {
+        "answer": "Interconnection",
+        "correct": true
+      },
+      {
+        "answer": "Session"
+      },
+      {
+        "answer": "Transport"
+      },
+      {
+        "answer": "Network"
+      },
+      {
+        "answer": "Data link"
+      },
+      {
+        "answer": "Physical"
+      }
+    ],
+    "tags": [
+      "problem solving",
+      "сеть",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол DNS предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами",
+        "correct": true
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол DHCP предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов",
+        "correct": true
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол FTP предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов",
+        "correct": true
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол HTTP предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста",
+        "correct": true
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол Telnet предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом",
+        "correct": true
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол SSH предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом",
+        "correct": true
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол SMTP предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем",
+        "correct": true
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол POP3 предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем",
+        "correct": true
+      },
+      {
+        "answer": "Загрузка заголовков email писем"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Протокол IMAP предназначен для",
+    "answers": [
+      {
+        "answer": "Работа с доменными именами"
+      },
+      {
+        "answer": "Назначение IP адресов"
+      },
+      {
+        "answer": "Передача файлов"
+      },
+      {
+        "answer": "Передача гипертекста"
+      },
+      {
+        "answer": "Удаленное сессионное соединение с хостом"
+      },
+      {
+        "answer": "Удаленное сессионное секьюрное соединение с хостом"
+      },
+      {
+        "answer": "Отправка email писем"
+      },
+      {
+        "answer": "Загрузка email писем"
+      },
+      {
+        "answer": "Загрузка заголовков email писем",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "протоколы"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  }
+]

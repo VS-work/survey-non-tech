@@ -1,0 +1,20 @@
+{
+    "hosting": {
+        "public": "./packages/client/dist",
+        "ignore": [
+            "**/.*"
+        ],
+        "rewrites": [{
+                "source": "/api/**",
+                "function": "api"
+            },
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    },
+    "functions": {
+        "source": "./packages/server"
+    }
+}

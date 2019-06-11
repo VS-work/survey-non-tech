@@ -1,0 +1,375 @@
+[
+  {
+    "question": "В чем разница между git и github?",
+    "answers": [
+      {
+        "answer": "Нет разницы"
+      },
+      {
+        "answer": "Git - это система контроля версий, а github - ее имплементация",
+        "correct": true
+      },
+      {
+        "answer": "Github - это система контроля версий, а git - ее имплементация"
+      },
+      {
+        "answer": "Github - это более новый git"
+      },
+      {
+        "answer": "Git - это более новый github"
+      }
+    ],
+    "tags": [
+      "git"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Может ли github существовать без git?",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "git"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Может ли git существовать без github?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "git"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Можно ли поднять собственный офисный git?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": false
+    }
+  },
+  {
+    "question": "Рассчитан ли git на работу с отключенным Internet-ом?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Для получения актуального состояния Git репозитория используют:",
+    "answers": [
+      {
+        "answer": "pull",
+        "correct": true
+      },
+      {
+        "answer": "clone"
+      },
+      {
+        "answer": "commit"
+      },
+      {
+        "answer": "checkout"
+      },
+      {
+        "answer": "push"
+      },
+      {
+        "answer": "add"
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для скачивания Git репозитория используют:",
+    "answers": [
+      {
+        "answer": "pull"
+      },
+      {
+        "answer": "clone",
+        "correct": true
+      },
+      {
+        "answer": "commit"
+      },
+      {
+        "answer": "checkout"
+      },
+      {
+        "answer": "push"
+      },
+      {
+        "answer": "add"
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для фиксации изменений (Git) на локальной машине используют:",
+    "answers": [
+      {
+        "answer": "pull"
+      },
+      {
+        "answer": "clone"
+      },
+      {
+        "answer": "commit",
+        "correct": true
+      },
+      {
+        "answer": "checkout"
+      },
+      {
+        "answer": "push"
+      },
+      {
+        "answer": "add"
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для работы с ветками Git используют:",
+    "answers": [
+      {
+        "answer": "pull"
+      },
+      {
+        "answer": "clone"
+      },
+      {
+        "answer": "commit"
+      },
+      {
+        "answer": "checkout",
+        "correct": true
+      },
+      {
+        "answer": "push"
+      },
+      {
+        "answer": "add"
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для отправки изменений на сервер Git используют:",
+    "answers": [
+      {
+        "answer": "pull"
+      },
+      {
+        "answer": "clone"
+      },
+      {
+        "answer": "commit"
+      },
+      {
+        "answer": "checkout"
+      },
+      {
+        "answer": "push",
+        "correct": true
+      },
+      {
+        "answer": "add"
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для добавление данных Git в индекс используют:",
+    "answers": [
+      {
+        "answer": "pull"
+      },
+      {
+        "answer": "clone"
+      },
+      {
+        "answer": "commit"
+      },
+      {
+        "answer": "checkout"
+      },
+      {
+        "answer": "push"
+      },
+      {
+        "answer": "add",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выберите наилучший способ избежать конфликты в Git",
+    "answers": [
+      {
+        "answer": "Чаще делать pull"
+      },
+      {
+        "answer": "Чаще делать commit"
+      },
+      {
+        "answer": "Чаще делать push"
+      },
+      {
+        "answer": "Следовать git flow, те грамотно построить работу с проектом",
+        "correct": true,
+        "complex": true
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для того, чтобы предложить свою версию изменений в Git делают",
+    "answers": [
+      {
+        "answer": "Pull"
+      },
+      {
+        "answer": "Push"
+      },
+      {
+        "answer": "Proven Result"
+      },
+      {
+        "answer": "Proposal Request"
+      },
+      {
+        "answer": "Pull Request",
+        "correct": true
+      },
+      {
+        "answer": "Push Response"
+      },
+      {
+        "answer": "Merge"
+      },
+      {
+        "answer": "Rebase"
+      }
+    ],
+    "tags": [
+      "git",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "slow": true
+    }
+  }
+]

@@ -1,0 +1,518 @@
+[
+  {
+    "question": "Выберите все правильные положения относительно реляционных баз данных",
+    "answers": [
+      {
+        "answer": "Данные храняться в виде документов"
+      },
+      {
+        "answer": "Данные храняться в виде ключ-значение"
+      },
+      {
+        "answer": "Данные хранятся в табличном виде",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "db"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "О каком типе БД идет речь, если “Таблицы могут быть связаны друг с другом посредством внешних ключей”",
+    "answers": [
+      {
+        "answer": "Графовая"
+      },
+      {
+        "answer": "Реляционная",
+        "correct": true
+      },
+      {
+        "answer": "Документо-ориентированная"
+      },
+      {
+        "answer": "Электронные таблицы"
+      }
+    ],
+    "tags": [
+      "db",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Какая из далее следующих СУБД является документо-ориентированной",
+    "answers": [
+      {
+        "answer": "MongoDB",
+        "correct": true
+      },
+      {
+        "answer": "Redis"
+      },
+      {
+        "answer": "MySQL"
+      },
+      {
+        "answer": "PostgreSQL"
+      },
+      {
+        "answer": "OracleDB"
+      },
+      {
+        "answer": "Neo4J"
+      }
+    ],
+    "tags": [
+      "db",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Какая из далее следующих СУБД является “ключ-значение”",
+    "answers": [
+      {
+        "answer": "MongoDB"
+      },
+      {
+        "answer": "Redis",
+        "correct": true
+      },
+      {
+        "answer": "MySQL"
+      },
+      {
+        "answer": "PostgreSQL"
+      },
+      {
+        "answer": "OracleDB"
+      },
+      {
+        "answer": "Neo4J"
+      }
+    ],
+    "tags": [
+      "db",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Какая из далее следующих СУБД является графовой",
+    "answers": [
+      {
+        "answer": "MongoDB"
+      },
+      {
+        "answer": "Redis"
+      },
+      {
+        "answer": "MySQL"
+      },
+      {
+        "answer": "PostgreSQL"
+      },
+      {
+        "answer": "OracleDB"
+      },
+      {
+        "answer": "Neo4J",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "db",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Какие из далее следующих СУБД являются реляционными",
+    "answers": [
+      {
+        "answer": "MongoDB"
+      },
+      {
+        "answer": "Redis"
+      },
+      {
+        "answer": "MySQL",
+        "correct": true
+      },
+      {
+        "answer": "PostgreSQL",
+        "correct": true
+      },
+      {
+        "answer": "OracleDB",
+        "correct": true
+      },
+      {
+        "answer": "Neo4J"
+      }
+    ],
+    "tags": [
+      "db",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "DBMS это:",
+    "answers": [
+      {
+        "answer": "Database Manipulating System"
+      },
+      {
+        "answer": "Database Management System",
+        "correct": true
+      },
+      {
+        "answer": "Database Management Stream"
+      },
+      {
+        "answer": "Database Model Structure"
+      },
+      {
+        "answer": "Database Model Schema"
+      }
+    ],
+    "tags": [
+      "db",
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Базы данных могут быть",
+    "answers": [
+      {
+        "answer": "Локальные",
+        "correct": true
+      },
+      {
+        "answer": "Глобальные"
+      },
+      {
+        "answer": "Распределенные",
+        "correct": true
+      },
+      {
+        "answer": "Обособленые"
+      }
+    ],
+    "tags": [
+      "db",
+      "понятия"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "SQL это:",
+    "answers": [
+      {
+        "answer": "Specified Query Language"
+      },
+      {
+        "answer": "Structured Query Language",
+        "correct": true
+      },
+      {
+        "answer": "Simplified Query Language"
+      },
+      {
+        "answer": "Simulated Queue Language"
+      }
+    ],
+    "tags": [
+      "db",
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "SQL используется в качестве языка запросов в:",
+    "answers": [
+      {
+        "answer": "Графовая БД"
+      },
+      {
+        "answer": "Реляционная БД",
+        "correct": true
+      },
+      {
+        "answer": "Документо-ориентированная БД"
+      },
+      {
+        "answer": "БД ключ-значение"
+      }
+    ],
+    "tags": [
+      "db"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Для уменьшения времени обработки запроса во многих СУБД используют:",
+    "answers": [
+      {
+        "answer": "Обфускацию"
+      },
+      {
+        "answer": "Индексацию",
+        "correct": true
+      },
+      {
+        "answer": "Идентификацию"
+      },
+      {
+        "answer": "Валидацию"
+      },
+      {
+        "answer": "Время запроса невозможно уменьшить средствами одной лишь только СУБД"
+      }
+    ],
+    "tags": [
+      "db",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "SaaS это",
+    "answers": [
+      {
+        "answer": "Software as a Service",
+        "correct": true
+      },
+      {
+        "answer": "Service as a Service"
+      },
+      {
+        "answer": "Service as a Software"
+      },
+      {
+        "answer": "Software as a Software"
+      }
+    ],
+    "tags": [
+      "clouds",
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "PaaS это",
+    "answers": [
+      {
+        "answer": "Program as a Service"
+      },
+      {
+        "answer": "Platform as a Service",
+        "correct": true
+      },
+      {
+        "answer": "Platform as a Solution"
+      },
+      {
+        "answer": "Portability as a Service"
+      },
+      {
+        "answer": "Portability as a Solution"
+      }
+    ],
+    "tags": [
+      "clouds",
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "IaaS это:",
+    "answers": [
+      {
+        "answer": "Information as a Service"
+      },
+      {
+        "answer": "Information as a Storage"
+      },
+      {
+        "answer": "Infrastructure as a Service",
+        "correct": true
+      },
+      {
+        "answer": "Infrastructure as a Storage"
+      },
+      {
+        "answer": "Immutability as a Service"
+      }
+    ],
+    "tags": [
+      "clouds",
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Heroku это",
+    "answers": [
+      {
+        "answer": "SaaS"
+      },
+      {
+        "answer": "PaaS",
+        "correct": true
+      },
+      {
+        "answer": "Iaas"
+      }
+    ],
+    "tags": [
+      "clouds",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Google Mail это",
+    "answers": [
+      {
+        "answer": "SaaS",
+        "correct": true
+      },
+      {
+        "answer": "PaaS"
+      },
+      {
+        "answer": "Iaas"
+      }
+    ],
+    "tags": [
+      "clouds",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Microsoft Office 365 это",
+    "answers": [
+      {
+        "answer": "SaaS",
+        "correct": true
+      },
+      {
+        "answer": "PaaS"
+      },
+      {
+        "answer": "Iaas"
+      }
+    ],
+    "tags": [
+      "clouds",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Google Cloud Platform это",
+    "answers": [
+      {
+        "answer": "SaaS"
+      },
+      {
+        "answer": "PaaS"
+      },
+      {
+        "answer": "Iaas",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "clouds",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Amazon AWS это",
+    "answers": [
+      {
+        "answer": "SaaS"
+      },
+      {
+        "answer": "PaaS"
+      },
+      {
+        "answer": "Iaas",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "clouds",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  }
+]

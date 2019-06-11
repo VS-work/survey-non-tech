@@ -1,0 +1,1060 @@
+[
+  {
+    "question": "Трансляторы бывают",
+    "answers": [
+      {
+        "answer": "Препроцессоры"
+      },
+      {
+        "answer": "Транспондеры"
+      },
+      {
+        "answer": "Интерпрететоры",
+        "correct": true
+      },
+      {
+        "answer": "Загрузчики"
+      },
+      {
+        "answer": "Компиляторы",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": false
+    }
+  },
+  {
+    "question": "Выберите подходящие предложения, описывающее Интерпретатор:",
+    "answers": [
+      {
+        "answer": "Для запуска программы нужен исходный код",
+        "correct": true
+      },
+      {
+        "answer": "Для запуска программы НЕ нужен исходный код"
+      },
+      {
+        "answer": "Преобразование исходного кода в бинарный и выполнение производится построчно",
+        "correct": true
+      },
+      {
+        "answer": "Преобразование исходного кода в бинарный производится целиком"
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите подходящие предложение, описывающее Компилятор:",
+    "answers": [
+      {
+        "answer": "Для запуска программы нужен исходный код"
+      },
+      {
+        "answer": "Для запуска программы НЕ нужен исходный код",
+        "correct": true
+      },
+      {
+        "answer": "Преобразование исходного кода в бинарный и выполнение производится построчно"
+      },
+      {
+        "answer": "Преобразование исходного кода в бинарный производится целиком",
+        "correct": true
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Основным понятием в ЯП является",
+    "answers": [
+      {
+        "answer": "Тег"
+      },
+      {
+        "answer": "Идентификатор"
+      },
+      {
+        "answer": "Код"
+      },
+      {
+        "answer": "Переменная",
+        "correct": true
+      },
+      {
+        "answer": "Селектор"
+      },
+      {
+        "answer": "Атрибут"
+      }
+    ],
+    "tags": [
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выберите правильные типы Javascript",
+    "answers": [
+      {
+        "answer": "Числовой",
+        "correct": true
+      },
+      {
+        "answer": "Строка",
+        "correct": true
+      },
+      {
+        "answer": "Процедура"
+      },
+      {
+        "answer": "Оператор"
+      },
+      {
+        "answer": "Булевый",
+        "correct": true
+      },
+      {
+        "answer": "null",
+        "correct": true
+      },
+      {
+        "answer": "undefined",
+        "correct": true
+      },
+      {
+        "answer": "object",
+        "correct": true
+      },
+      {
+        "answer": "integer"
+      }
+    ],
+    "tags": [
+      "js",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите правильные определения (и присвоения) переменной Javascript",
+    "answers": [
+      {
+        "answer": "var a = 1;",
+        "correct": true
+      },
+      {
+        "answer": "a = 1;",
+        "correct": true
+      },
+      {
+        "answer": "1a=1;"
+      },
+      {
+        "answer": "var Str = 'a string';",
+        "correct": true
+      },
+      {
+        "answer": "var str = \"string\";",
+        "correct": true
+      },
+      {
+        "answer": "var Str = string;"
+      },
+      {
+        "answer": "var _str = string;"
+      },
+      {
+        "answer": "var !str = string;"
+      },
+      {
+        "answer": "var !str = \"string\";"
+      },
+      {
+        "answer": "var str-10 = \"string\";"
+      },
+      {
+        "answer": "var str_10 = \"string\";",
+        "correct": true
+      },
+      {
+        "answer": "var Fun = function() {}",
+        "correct": true
+      },
+      {
+        "answer": "var amIRight = true;",
+        "correct": true
+      },
+      {
+        "answer": "var sum = 10+2.0;",
+        "correct": true
+      },
+      {
+        "answer": "var sum12 = 10+2.0;",
+        "correct": true
+      },
+      {
+        "answer": "var sum_12 = 10+2.0;",
+        "correct": true
+      },
+      {
+        "answer": "var sum(12) = 10+2.0;"
+      },
+      {
+        "answer": "val = null;",
+        "correct": true
+      },
+      {
+        "answer": "var1 = undefined;",
+        "correct": true
+      },
+      {
+        "answer": "var address = {street: 'foo', ap: 10};",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "js",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Можно ли в Javascript присвоить в качестве значения функцию?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "js",
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Можно ли в Javascript передать в качестве параметра функции другую функцию?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "js",
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Правда ли, что объекты Javascript могут иметь произвольный уровень вложенности?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "js",
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Найдите НЕПРАВИЛЬНЫЕ определения Javascript объектов",
+    "answers": [
+      {
+        "answer": "var o = {};"
+      },
+      {
+        "answer": "var o = {a: 1};"
+      },
+      {
+        "answer": "var o = {a: '111'};"
+      },
+      {
+        "answer": "var o = (a: 1);",
+        "correct": true
+      },
+      {
+        "answer": "var o = {a: 1; b: 2};"
+      },
+      {
+        "answer": "var person = { name=> 'John', surname=> 'Doe', email=> 'john.doe@aol.com' }",
+        "correct": true
+      },
+      {
+        "answer": "var o = a: 1;",
+        "correct": true
+      },
+      {
+        "answer": "var o = ...a: 1;",
+        "correct": true
+      },
+      {
+        "answer": "var o = { a: 1, b: };",
+        "correct": true
+      },
+      {
+        "answer": "var o = [a: 1];",
+        "correct": true
+      },
+      {
+        "answer": "var o = [1];"
+      },
+      {
+        "answer": "var o = [1, 2];"
+      },
+      {
+        "answer": "var person = {name: 'John', surname: 'Doe', email: 'john.doe@aol.com'}"
+      },
+      {
+        "answer": "var o = [1; 2];",
+        "correct": true
+      },
+      {
+        "answer": "var o = [1..2];",
+        "correct": true
+      },
+      {
+        "answer": "var o = (1);",
+        "correct": true
+      },
+      {
+        "answer": "var o = (1,2);",
+        "correct": true
+      },
+      {
+        "answer": "var o = (1;2);",
+        "correct": true
+      },
+      {
+        "answer": "var person = {name-> 'John', surname-> 'Doe', email-> 'john.doe@aol.com'}",
+        "correct": true
+      },
+      {
+        "answer": "var o = (1..2);",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "js",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли Javascript интерпретируемым языком?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "js",
+      "яп",
+      "теория"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "JSON это",
+    "answers": [
+      {
+        "answer": "JavaScript Oriented Notation"
+      },
+      {
+        "answer": "JavaScript Oriented Notice"
+      },
+      {
+        "answer": "JavaScript Object Notation",
+        "correct": true
+      },
+      {
+        "answer": "JavaScript Object Notice"
+      },
+      {
+        "answer": "JavaScript Object Nativity"
+      },
+      {
+        "answer": "JavaScript Oriented Nativity"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "понятия"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{}</pre>",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>[{}]</pre>",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{[]}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>[1,2,3]</pre>",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\"Name\": \"John\"\n,\"Surname\": \"Doe\",\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\tName: \"John\",\n\tSurname: \"Doe\",\n\tAge: 44\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\tName: \"John\",\n\tSurname: \"Doe\",\n\tAge: 44\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\t\"Name\": 'John',\n\t\"Surname\": 'Doe',\n\t\"Age\": 44\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\t\"Name\": 'John';\n\t\"Surname\": 'Doe';\n\t\"Age\": 44\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\t\"Name\": \"John\",\n\t\"Surname\": \"Doe\",\n\t\"Contacts\": {\n\t\"Email\": \"john-doe@aol.com\",\n\t\"Phone\": \"+123454653453\"\n\t},\n\t\"Age\": 44\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий JSON правильным?<pre>{\n\t\"Name\": \"John\";\n\t\"Surname\": \"Doe\";\n\t\"Contacts\": {\n\t\t\"Email\": \"john-doe@aol.com\";\n\t\t\"Phone\": \"+123454653453\"\n};\n\t\"Age\": 44\n}</pre>",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "форматы",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли массив Javascript объектом?",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": false
+    }
+  },
+  {
+    "question": "Control Structures в Javascript это:",
+    "answers": [
+      {
+        "answer": "Функции"
+      },
+      {
+        "answer": "Циклы",
+        "correct": true
+      },
+      {
+        "answer": "Условия",
+        "correct": true
+      },
+      {
+        "answer": "Блоки"
+      },
+      {
+        "answer": "Переходы"
+      },
+      {
+        "answer": "Объекты"
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже:\n<pre>for (var i = 0; i < 10; i++) {\n\tconsole.log(i);\n}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен"
+      },
+      {
+        "answer": "Код синтаксически правилен",
+        "correct": true
+      },
+      {
+        "answer": "Код логически ошибочен, тк цикл не сработает"
+      },
+      {
+        "answer": "Код логически правилен",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции",
+        "correct": true
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже:<pre>for (var i = 0; i > 10; i++) {\n\tconsole.log(i)\n\t}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен"
+      },
+      {
+        "answer": "Код синтаксически правилен",
+        "correct": true
+      },
+      {
+        "answer": "Код логически ошибочен, тк цикл не сработает",
+        "correct": true
+      },
+      {
+        "answer": "Код логически правилен"
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции",
+        "correct": true
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже:<pre>for (var i = 0; i < 10; i++) {\n\tconsole.log{i};\n\t}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен",
+        "correct": true
+      },
+      {
+        "answer": "Код синтаксически правилен"
+      },
+      {
+        "answer": "Код логически ошибочен, тк цикл не сработает",
+        "correct": true
+      },
+      {
+        "answer": "Код логически правилен"
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции"
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже: <pre>var trafficLightColor = 'red';\nif (trafficLightColor == 'red') {\n\tconsole.log('go!');\n} else {\n\tconsole.log('stop!');\n}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен"
+      },
+      {
+        "answer": "Код синтаксически правилен",
+        "correct": true
+      },
+      {
+        "answer": "Код логически ошибочен"
+      },
+      {
+        "answer": "Код логически правилен",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции",
+        "correct": true
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже: <pre>var trafficLightColor = 'red';\nif (trafficLightColor == 'red') {\n\tconsole.log(go!);\n} else {\n\tconsole.log(stop!);\n}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен",
+        "correct": true
+      },
+      {
+        "answer": "Код синтаксически правилен"
+      },
+      {
+        "answer": "Код логически ошибочен"
+      },
+      {
+        "answer": "Код логически правилен"
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции",
+        "correct": true
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже: <pre>var trafficLightColor = 'red';\nwhen (trafficLightColor == 'red') {\n\tconsole.log('go!');\n} otherwise {\n\tconsole.log('stop!');\n}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен",
+        "correct": true
+      },
+      {
+        "answer": "Код синтаксически правилен"
+      },
+      {
+        "answer": "Код логически ошибочен"
+      },
+      {
+        "answer": "Код логически правилен"
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции",
+        "correct": true
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Выберите все ВЕРНЫЕ положения относительно кода ниже: <pre>var trafficLightColor = 'red';\nif (trafficLightColor = 'red') {\n\tconsole.log('go!');\n} else {\n\tconsole.log('stop!');\n}</pre>",
+    "answers": [
+      {
+        "answer": "Код синтаксически ошибочен"
+      },
+      {
+        "answer": "Код синтаксически правилен",
+        "correct": true
+      },
+      {
+        "answer": "Код логически ошибочен",
+        "correct": true
+      },
+      {
+        "answer": "Код логически правилен"
+      },
+      {
+        "answer": "В коде присутствует Control structure",
+        "correct": true
+      },
+      {
+        "answer": "В коде присутствует вызов функции",
+        "correct": true
+      },
+      {
+        "answer": "В коде используется объект",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "яп",
+      "javascript",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  }
+]

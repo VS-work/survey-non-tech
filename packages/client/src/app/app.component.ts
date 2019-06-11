@@ -6,8 +6,6 @@ import { Phases, TestResult, TestSummary } from './common/session.desc';
 import { GoogleLoginProvider, AuthService, SocialUser } from 'angularx-social-login';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
-const host = 'http://localhost:3000';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -40,7 +38,7 @@ export class AppComponent implements OnInit {
   }
 
   async openModal(template: TemplateRef<any>) {
-    this.passedSessions = await this.http.get<any>(`${host}/passed-sessions/${this.user.id}`).toPromise();
+    this.passedSessions = await this.http.get<any>(`/api/passed-sessions/${this.user.id}`).toPromise();
     this.modalRef = this.modalService.show(template);
   }
 
@@ -50,7 +48,7 @@ export class AppComponent implements OnInit {
   }
 
   async stop() {
-    await this.http.get<any>(`${host}/abandon/${this.questService.session.id}`).toPromise();
+    await this.http.get<any>(`/api/abandon/${this.questService.session.id}`).toPromise();
     this.phase = Phases.Finished;
     this.questService.session.id = null;
     this.questService.session.properties.quantity = null;
@@ -69,13 +67,13 @@ export class AppComponent implements OnInit {
   }
 
   async processAnswer(result: string | string[]) {
-    await this.http.post<any>(`${host}/answer/${this.questService.session.id}`, { origin: this.question, result }).toPromise();
+    await this.http.post<any>(`/api/answer/${this.questService.session.id}`, { origin: this.question, result }).toPromise();
     if (this.currentQuestion < this.totalQuestions) {
       this.processQuestion();
       this.currentQuestion++;
     } else {
       this.question = null;
-      this.testResult = await this.http.post<any>(`${host}/finish/${this.questService.session.id}`, this.user).toPromise();
+      this.testResult = await this.http.post<any>(`/api/finish/${this.questService.session.id}`, this.user).toPromise();
       this.phase = Phases.Finished;
     }
   }
@@ -102,12 +100,12 @@ export class AppComponent implements OnInit {
 
   private async nextQuestion() {
     this.phase = Phases.InProgress;
-    this.question = await this.http.get<any>(`${host}/question/${this.questService.session.id}`).toPromise();
+    this.question = await this.http.get<any>(`/api/question/${this.questService.session.id}`).toPromise();
   }
 
   private async configure() {
-    this.questService.session.id = (await this.http.get<any>(`${host}/session`).toPromise()).id;
-    this.questService.session.properties = (await this.http.get<any>(`${host}/configure/${this.questService.session.id}/${this.totalQuestions}`).toPromise()).properties;
+    this.questService.session.id = (await this.http.get<any>(`/api/session`).toPromise()).id;
+    this.questService.session.properties = (await this.http.get<any>(`/api/configure/${this.questService.session.id}/${this.totalQuestions}`).toPromise()).properties;
     this.currentQuestion = 1;
     this.question = null;
   }

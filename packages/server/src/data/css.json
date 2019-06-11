@@ -1,0 +1,130 @@
+[
+  {
+    "question": "Основным понятием в CSS является",
+    "answers": [
+      {
+        "answer": "Тег"
+      },
+      {
+        "answer": "Идентификатор"
+      },
+      {
+        "answer": "Код"
+      },
+      {
+        "answer": "Переменная"
+      },
+      {
+        "answer": "Селектор",
+        "correct": true
+      },
+      {
+        "answer": "Атрибут"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выберите правильные селекторы",
+    "answers": [
+      {
+        "answer": "Селектор переменной"
+      },
+      {
+        "answer": "Селектор тега",
+        "correct": true
+      },
+      {
+        "answer": "ID-селектор",
+        "correct": true
+      },
+      {
+        "answer": "Селектор кода"
+      },
+      {
+        "answer": "Селектор класса",
+        "correct": true
+      },
+      {
+        "answer": "Селектор стиля"
+      }
+    ],
+    "tags": [
+      "problem solving",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Определения CSS классов могут находиться в",
+    "answers": [
+      {
+        "answer": "Непосредственно в теге style",
+        "correct": true
+      },
+      {
+        "answer": "Любом теге"
+      },
+      {
+        "answer": "Непосредственно в теге head"
+      },
+      {
+        "answer": "Отдельном файле",
+        "correct": true
+      },
+      {
+        "answer": "Значении атрибута тега"
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "problem solving",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true
+    }
+  },
+  {
+    "question": "Основное назначение CSS состоит в",
+    "answers": [
+      {
+        "answer": "Определении политики безопасности web страницы"
+      },
+      {
+        "answer": "Описании внешнего вида документа",
+        "correct": true
+      },
+      {
+        "answer": "Определении структуры документа"
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  }
+]

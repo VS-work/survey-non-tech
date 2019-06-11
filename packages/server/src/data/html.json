@@ -1,0 +1,608 @@
+[
+  {
+    "question": "HTML расшифровывается как:",
+    "answers": [
+      {
+        "answer": "HyperText Meta Language"
+      },
+      {
+        "answer": "HyperText Mono Language"
+      },
+      {
+        "answer": "HyperText Meta Language"
+      },
+      {
+        "answer": "HyperText Macro Language"
+      },
+      {
+        "answer": "HyperText Markup Language",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Основными понятиями HTML являются:",
+    "answers": [
+      {
+        "answer": "Переменная"
+      },
+      {
+        "answer": "Макрос"
+      },
+      {
+        "answer": "Атрибут макроса"
+      },
+      {
+        "answer": "Файл"
+      },
+      {
+        "answer": "Тег",
+        "correct": true
+      },
+      {
+        "answer": "Символ"
+      },
+      {
+        "answer": "Дескриптор тега"
+      },
+      {
+        "answer": "Строка"
+      },
+      {
+        "answer": "Тег блока"
+      },
+      {
+        "answer": "Атрибут тега",
+        "correct": true
+      },
+      {
+        "answer": "Код"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Теги бывают",
+    "answers": [
+      {
+        "answer": "Моно теги"
+      },
+      {
+        "answer": "Одинарные",
+        "correct": true
+      },
+      {
+        "answer": "Поли теги"
+      },
+      {
+        "answer": "Парные",
+        "correct": true
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "фронтенд"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Какие из нижеперечисленных конструкций содержат правильно оформленные тегами:",
+    "answers": [
+      {
+        "answer": "**p"
+      },
+      {
+        "answer": "|p||/p|"
+      },
+      {
+        "answer": "<p></p>",
+        "correct": true
+      },
+      {
+        "answer": "<p><p>"
+      },
+      {
+        "answer": "<p><-p>"
+      },
+      {
+        "answer": "<p/>"
+      },
+      {
+        "answer": "<img src=\"mycoolimage.png\">",
+        "correct": true
+      },
+      {
+        "answer": "<img src=\"mycoolimage.png\"/>",
+        "correct": true
+      },
+      {
+        "answer": "<br>",
+        "correct": true
+      },
+      {
+        "answer": "<br/>",
+        "correct": true
+      },
+      {
+        "answer": "<br />",
+        "correct": true
+      },
+      {
+        "answer": "<a href=\"#\" target=\"_blank\">new</a>",
+        "correct": true
+      },
+      {
+        "answer": "<a href=’#’ target='_blank'>new</a>",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "фронтенд",
+      "html",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Какие из нижеперечисленных конструкций НЕ содержат ошибок:",
+    "answers": [
+      {
+        "answer": "<p><a href=\"#\">111 <img src=\"mycoolimage.png\"> 222</a></p>",
+        "correct": true
+      },
+      {
+        "answer": "<p><a href=\"#\">111 <img src=\"mycoolimage.png\" width=10 height=10> 222</a></p>",
+        "correct": true
+      },
+      {
+        "answer": "<p><a href=\"#\">111 <img src=\"mycoolimage.png\"> 222</p></a>"
+      },
+      {
+        "answer": "<p><a href=\"#\">111 <img src=\"mycoolimage.png\" *=\"select\"> 222</a></p>"
+      },
+      {
+        "answer": "<p><a href='#'>111 <img src='mycoolimage.png' *='select'> 222</a></p>"
+      },
+      {
+        "answer": "<p>111 <img src=\"mycoolimage.png\"> 222</a></p>",
+        "correct": true
+      },
+      {
+        "answer": "<p><a href=\"\"#\"\">111 <img src=\"\"mycoolimage.png\"\"> 222</a></p>"
+      },
+      {
+        "answer": "<p><a href=\"#\">\"111\" <img src=\"mycoolimage.png\"> “222”</a></p>",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "фронтенд",
+      "html",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Видимые DOM элементы на странице могут быть блочными и строчными",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "фронтенд"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Блочные элементы это:",
+    "answers": [
+      {
+        "answer": "DIV, P, UL, OL, H1, …",
+        "correct": true
+      },
+      {
+        "answer": "A, SPAN, STRONG, IMG, …"
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Строчные элементы это:",
+    "answers": [
+      {
+        "answer": "DIV, P, UL, OL, H1, …"
+      },
+      {
+        "answer": "A, SPAN, STRONG, IMG, …",
+        "correct": true
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Контент-элементы это:",
+    "answers": [
+      {
+        "answer": "DIV, P, UL, OL, H1, …"
+      },
+      {
+        "answer": "A, SPAN, STRONG, IMG, …"
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "correct": true,
+        "last": true
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": true,
+      "slow": false
+    }
+  },
+  {
+    "question": "Блочные элементы занимают всю доступную ширину",
+    "answers": [
+      {
+        "answer": "Нет"
+      },
+      {
+        "answer": "Да",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "фронтенд",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "Строчные элементы занимают всю доступную ширину",
+    "answers": [
+      {
+        "answer": "Нет",
+        "correct": true
+      },
+      {
+        "answer": "Да"
+      }
+    ],
+    "tags": [
+      "фронтенд",
+      "problem solving"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true,
+      "complex": false,
+      "slow": false
+    }
+  },
+  {
+    "question": "DOM это",
+    "answers": [
+      {
+        "answer": "Database Oriented Model"
+      },
+      {
+        "answer": "Document Oriented Model"
+      },
+      {
+        "answer": "Document Object Model",
+        "correct": true
+      },
+      {
+        "answer": "Data Oriented Markup"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "BOM это",
+    "answers": [
+      {
+        "answer": "Browser Oriented Model"
+      },
+      {
+        "answer": "Business Oriented Model"
+      },
+      {
+        "answer": "Browser Oriented Markup"
+      },
+      {
+        "answer": "Browser Object Model",
+        "correct": true
+      },
+      {
+        "answer": "Byte Oriented Model"
+      },
+      {
+        "answer": "Byte Oriented Model"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Выделите то, что НЕ является тегом HTML5",
+    "answers": [
+      {
+        "answer": "A"
+      },
+      {
+        "answer": "SPAN"
+      },
+      {
+        "answer": "LI"
+      },
+      {
+        "answer": "UL"
+      },
+      {
+        "answer": "OL"
+      },
+      {
+        "answer": "K",
+        "correct": true
+      },
+      {
+        "answer": "TABLE"
+      },
+      {
+        "answer": "LINK"
+      },
+      {
+        "answer": "MUCH",
+        "correct": true
+      },
+      {
+        "answer": "STYLE"
+      },
+      {
+        "answer": "MORE",
+        "correct": true
+      },
+      {
+        "answer": "SCRIPT"
+      },
+      {
+        "answer": "DIV"
+      },
+      {
+        "answer": "H1"
+      },
+      {
+        "answer": "B"
+      },
+      {
+        "answer": "STRONG"
+      }
+    ],
+    "tags": [
+      "понятия",
+      "фронтенд",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Основное назначение HTML состоит в",
+    "answers": [
+      {
+        "answer": "Определении политики безопасности web страницы"
+      },
+      {
+        "answer": "Описании внешнего вида документа"
+      },
+      {
+        "answer": "Определении структуры документа",
+        "correct": true
+      },
+      {
+        "answer": "Ничего из вышеперечисленного",
+        "last": true
+      }
+    ],
+    "tags": [
+      "фронтенд"
+    ],
+    "config": {
+      "type": "radiobutton",
+      "shuffle": true
+    }
+  },
+  {
+    "question": "Является ли следующий HTML код ошибочным?<br><pre>&lt;p&gt; content &lt;b&gt;content content content content&lt;/p&gt;&lt;/b&gt;</pre>",
+    "answers": [
+      {
+        "answer": "Код правилен"
+      },
+      {
+        "answer": "Да, тк теги не закрыты"
+      },
+      {
+        "answer": "Да, тк теги закрыты не на нужных местах",
+        "correct": true
+      },
+      {
+        "answer": "Да, тк тега “b” не существует"
+      },
+      {
+        "answer": "Да, тк вложение тега “b” некорректно для данного случая"
+      }
+    ],
+    "tags": [
+      "html",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий HTML код ошибочным?<pre>&lt;p&gt; content &lt;b&gt;content content content content&lt;/p&gt;</pre>",
+    "answers": [
+      {
+        "answer": "Код правилен"
+      },
+      {
+        "answer": "Да, тк теги не закрыты",
+        "correct": true
+      },
+      {
+        "answer": "Да, тк теги закрыты не на нужных местах"
+      },
+      {
+        "answer": "Да, тк тега “b” не существует"
+      },
+      {
+        "answer": "Да, тк вложение тега “b” некорректно для данного случая"
+      }
+    ],
+    "tags": [
+      "html",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  },
+  {
+    "question": "Является ли следующий HTML код ошибочным?<pre>&lt;p&gt; content &lt;b&gt;content content content content&lt;/b&gt;&lt;/p&gt;</pre>",
+    "answers": [
+      {
+        "answer": "Код правилен",
+        "correct": true
+      },
+      {
+        "answer": "Да, тк теги не закрыты"
+      },
+      {
+        "answer": "Да, тк теги закрыты не на нужных местах"
+      },
+      {
+        "answer": "Да, тк тега “b” не существует"
+      },
+      {
+        "answer": "Да, тк вложение тега “b” некорректно для данного случая"
+      }
+    ],
+    "tags": [
+      "html",
+      "problem solving"
+    ],
+    "config": {
+      "type": "checkboxes",
+      "shuffle": true,
+      "complex": true,
+      "slow": true
+    }
+  }
+]
