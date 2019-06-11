@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Param, Body } from '@nestjs/common';
 import { AppService } from './app.service';
-import { SessionConfig, Question, Answered, TestResult, TestSummary } from './session.config';
+import { SessionConfig, Question, Answered, TestResult, TestSummary } from '@survey-non-tech/shared';
 
 @Controller('api')
 export class AppController {

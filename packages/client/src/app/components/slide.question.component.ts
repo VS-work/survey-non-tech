@@ -1,7 +1,8 @@
 import { shuffle } from 'lodash';
 import { Component, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, FormArray, FormControl } from '@angular/forms';
-import { IQuestion, CHECKBOXES, RADIOBUTTON } from '../common/question.desc';
+import { CHECKBOXES, RADIOBUTTON } from '../common/question.desc';
+import { Question } from '@survey-non-tech/shared';
 
 @Component({
   selector: 'slide-question',
@@ -16,7 +17,7 @@ export class SlideQuestionComponent implements OnDestroy {
   model: { option: string };
   readonly Checkboxes: string;
   readonly RadioButton: string;
-  private _content: IQuestion;
+  private _content: Question;
   private questInterval;
   private timerInterval;
   private restTime: number;
@@ -26,12 +27,12 @@ export class SlideQuestionComponent implements OnDestroy {
     this.RadioButton = RADIOBUTTON;
   }
 
-  get content(): IQuestion {
+  get content(): Question {
     return this._content;
   }
 
   @Input()
-  set content(input: IQuestion) {
+  set content(input: Question) {
     this._content = input;
     this.fillItems();
   }

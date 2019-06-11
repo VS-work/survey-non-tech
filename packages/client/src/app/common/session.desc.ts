@@ -12,22 +12,3 @@ export interface ISession {
 export enum Phases {
   Blank, InProgress, Finished
 }
-
-export interface TestResult {
-  total: number;
-  complexPercent: number;
-  simplePercent: number;
-  resultByTags: {
-    [s: string]: {
-      right: number,
-      wrong: number,
-      rightPercent: number,
-      wrongPercent: number
-    }
-  };
-}
-
-export interface TestSummary {
-  title: string;
-  details: TestResult;
-}

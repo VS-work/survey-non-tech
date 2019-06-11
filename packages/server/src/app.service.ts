@@ -4,7 +4,7 @@
 import { Injectable } from '@nestjs/common';
 import { v4 } from 'uuid';
 import { flatten, cloneDeep, isArray, includes, isEmpty, keys } from 'lodash';
-import { SessionConfig, Question, Answered, TestResult, Answer, TestSummary } from './session.config';
+import { SessionConfig, Question, Answered, TestResult, Answer, TestSummary } from '@survey-non-tech/shared';
 
 // const readFile = promisify(_readFile);
 // const writeFile = promisify(_writeFile);

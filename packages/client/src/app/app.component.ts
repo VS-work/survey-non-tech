@@ -1,8 +1,8 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { IQuestion } from './common/question.desc';
 import { QuestService } from './quest.service';
-import { Phases, TestResult, TestSummary } from './common/session.desc';
+import { Phases } from './common/session.desc';
+import { Question, TestResult, TestSummary } from '@survey-non-tech/shared';
 import { GoogleLoginProvider, AuthService, SocialUser } from 'angularx-social-login';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
@@ -14,7 +14,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 export class AppComponent implements OnInit {
   modalRef: BsModalRef;
   user: SocialUser;
-  question: IQuestion;
+  question: Question;
   totalQuestions: number;
   currentQuestion: number;
   remainTimeLabel: string;

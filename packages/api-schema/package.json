@@ -1,0 +1,14 @@
+{
+    "name": "@survey-non-tech/shared",
+    "version": "0.0.0",
+    "scripts": {
+        "build": "tsc && npm pack && mv *.tgz ../server/dist"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "dependencies": {},
+    "private": true,
+    "devDependencies": {
+        "typescript": "^3.4.3"
+    }
+}

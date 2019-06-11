@@ -17,6 +17,7 @@
         "@nestjs/common": "6.0.5",
         "@nestjs/core": "6.0.5",
         "@nestjs/platform-express": "6.0.5",
+        "@survey-non-tech/shared": "file:dist/survey-non-tech-shared-0.0.0.tgz",
         "body-parser": "1.19.0",
         "cors": "2.8.5",
         "firebase-admin": "7.0.0",

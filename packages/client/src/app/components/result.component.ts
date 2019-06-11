@@ -1,6 +1,6 @@
 import { keys } from 'lodash';
 import { Component, Input } from '@angular/core';
-import { TestResult } from '../common/session.desc';
+import { TestResult } from '@survey-non-tech/shared';
 
 const quanlityLimit = 66;
 
