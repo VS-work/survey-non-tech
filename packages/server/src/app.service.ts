@@ -1,14 +1,18 @@
 // import { promisify } from 'util';
 // import { existsSync, mkdirSync, writeFile as _writeFile, readdir as _readdir, readFile as _readFile } from 'fs';
 // import { resolve } from 'path';
+import * as firebase from 'firebase-admin';
 import { Injectable } from '@nestjs/common';
 import { v4 } from 'uuid';
 import { flatten, cloneDeep, isArray, includes, isEmpty, keys } from 'lodash';
 import { SessionConfig, Question, Answered, TestResult, Answer, TestSummary } from '@survey-non-tech/shared';
+import { resolve } from 'dns';
 
 // const readFile = promisify(_readFile);
 // const writeFile = promisify(_writeFile);
 // const readdir = promisify(_readdir);
+
+const serviceAccount = require("./adminsdk.json");
 
 function getRandom(min: number, max: number): number {
   return min + Math.floor(Math.random() * (max - min + 1));
@@ -30,6 +34,10 @@ export class AppService {
       require('./data/prog.json')
     ]);
     this.checkData();
+    firebase.initializeApp({
+      credential: firebase.credential.cert(serviceAccount),
+      databaseURL: "https://non-tech-quiz.firebaseio.com"
+    });
   }
 
   createSession(): string {
@@ -161,23 +169,50 @@ export class AppService {
       resultByTags[tag].wrongPercent = Math.round((resultByTags[tag].wrong / count) * 100);
     }
 
-
     /*const resultDir = resolve('result', `${user.id}`);
     if (!existsSync(resultDir)) {
       mkdirSync(resultDir);
     }*/
     const summary = { total, resultByTags, complexPercent, simplePercent };
-    const content = JSON.stringify({ details: this.getSession(id).properties.passed, summary }, null, 2);
+    // const content = JSON.stringify({ details: this.getSession(id).properties.passed, summary }, null, 2);
+    const details = JSON.stringify(summary);
     /*const resultFile = resolve(resultDir, `${new Date().toISOString()}.json`);
-
     await writeFile(resultFile, content);*/
+
+    const db = firebase.database();
+    const ref = db.ref("/totals");
+    ref.push({
+      details,
+      title: new Date().toISOString(),
+      userId: user.id
+    });
 
     return summary;
   }
 
   async getPassedSessions(userId: string): Promise<TestSummary[]> {
     // const files = await readdir(resolve('result', userId));
-    const out = [];
+    return new Promise<TestSummary[]>(resolve => {
+      const out = [];
+      const db = firebase.database();
+      const ref = db.ref("/totals");
+
+      ref.on('value', snapshot => {
+        const data = snapshot.val();
+
+        for (const key of Object.keys(data)) {
+          const record = data[key];
+          if (record.userId === userId) {
+            out.push({
+              title: record.title,
+              details: JSON.parse(record.details)
+            });
+          }
+        }
+
+        resolve(out);
+      });
+    });
 
     /*for (const file of files) {
       const allSession = JSON.parse(await readFile(resolve('result', userId, file), 'utf-8'));
@@ -187,7 +222,7 @@ export class AppService {
       });
     }*/
 
-    return out;
+    // return out;
   }
 
   private getQuestionByLabel(label: string): Question {

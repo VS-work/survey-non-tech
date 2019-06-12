@@ -78,10 +78,10 @@
       "experimentalDecorators": true,
       "target": 2,
       "sourceMap": true,
-      "outDir": "/home/vs/projects/survey-non-tech/packages/api-schema/lib",
+      "outDir": "/home/vs/projects/survey-non-tech/packages/api-schema/dist",
       "baseUrl": "/home/vs/projects/survey-non-tech/packages/api-schema/",
       "incremental": true,
-      "declarationDir": "/home/vs/projects/survey-non-tech/packages/api-schema/lib",
+      "declarationDir": "/home/vs/projects/survey-non-tech/packages/api-schema/dist",
       "rootDir": "/home/vs/projects/survey-non-tech/packages/api-schema/src",
       "configFilePath": "/home/vs/projects/survey-non-tech/packages/api-schema/tsconfig.json"
     },

@@ -1,12 +1,11 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "lerna": "^3.4.3"
-  },
-  "scripts": {},
-  "dependencies": {
-    "codecov": "^3.1.0",
-    "firebase-tools": "^6.1.1"
-  }
+    "name": "root",
+    "private": true,
+    "scripts": {
+        "build": "cd ./packages/api-schema && npm i && npm run build && cd ../server && npm i && npm run build && cd ../client && npm i && npm run build",
+        "deploy": "firebase deploy"
+    },
+    "dependencies": {
+        "firebase-tools": "6.1.1"
+    }
 }

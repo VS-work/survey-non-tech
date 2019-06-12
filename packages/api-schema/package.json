@@ -2,13 +2,13 @@
     "name": "@survey-non-tech/shared",
     "version": "0.0.0",
     "scripts": {
-        "build": "tsc && npm pack && mv *.tgz ../server/dist"
+        "build": "tsc && npm pack && mkdir -p ../server/dist && cp *.tgz ../server/dist && mkdir -p ../client/int && mv *.tgz ../client/int"
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "dependencies": {},
     "private": true,
     "devDependencies": {
-        "typescript": "^3.4.3"
+        "typescript": "3.4.3"
     }
 }

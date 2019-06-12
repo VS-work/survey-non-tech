@@ -2,7 +2,7 @@
     "name": "@survey-non-tech/server",
     "version": "0.0.0",
     "scripts": {
-        "build": "tsc -p tsconfig.build.json && mkdir -p ./dist/data && cp ./src/data/* ./dist/data",
+        "build": "tsc -p tsconfig.build.json && mkdir -p ./dist/data && cp ./src/data/* ./dist/data && cp ./secret/adminsdk.json ./dist",
         "serve": "npm run build && firebase serve --only functions",
         "shell": "npm run build && firebase functions:shell",
         "start": "npm run shell",
